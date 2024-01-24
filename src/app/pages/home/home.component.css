@@ -1,0 +1,17 @@
+.articles {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid purple; */
+}
+
+.articles__main {
+  padding: 50px;
+  /* border: 1px solid white; */
+  width: 50%;
+}
+
+.articles__others {
+  padding: 50px;
+  /* border: 1px solid white; */
+  width: 50%;
+}

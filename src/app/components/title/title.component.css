@@ -10,5 +10,14 @@
 }
 
 .container__title > hr {
-  margin: 20px 0;
+  margin: 10px 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #3f3f3f;
+  margin: 1em 0;
+  padding: 0;
 }
