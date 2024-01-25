@@ -2,6 +2,7 @@
 <div class="articles">
   <div class="articles__main">
     <app-big-card
+      [id]="main_article.id"
       [img]="main_article.img"
       [title]="main_article.title"
       [link]="main_article.link"
@@ -11,6 +12,7 @@
   <div class="articles__others">
     <div *ngFor="let article of articles; last as isLast">
       <app-small-card
+        [id]="article.id"
         [img]="article.img"
         [date]="article.date"
         [title]="article.title"

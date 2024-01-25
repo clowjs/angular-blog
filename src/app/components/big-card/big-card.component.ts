@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { mockData } from '../../data/mockData'
 
 @Component({
   selector: 'app-big-card',
@@ -7,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class BigCardComponent implements OnInit {
 
+  @Input() id: string = '';
   @Input() img: string = '';
   @Input() description: string = '';
   @Input() title: string = '';

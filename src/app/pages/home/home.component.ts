@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { mockData } from '../../data/mockData'
 
 @Component({
   selector: 'app-home',
@@ -7,28 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  articles: any[] = [
-    {
-      img: 'https://miro.medium.com/v2/resize:fit:720/format:webp/0*DTy8tlNHXGc0g4sB',
-      date: 'November 8th, 2023',
-      title: 'Introducing Angular v17',
-      link: 'https://blog.angular.io/introducing-angular-v17-4d7033312e4b'
-    },
-    {
-      img: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*aCsnm9viiL5Fo0JC-I_exQ.png',
-      date: 'November 6th, 2023',
-      title: 'Announcing Angular.dev',
-      link: 'https://blog.angular.io/announcing-angular-dev-1e1205fa3039'
-    },
-    {
-      img: 'https://miro.medium.com/v2/resize:fit:720/format:webp/0*1yo17Ov28sa7p33N',
-      date: 'September 7th, 2023',
-      title: 'New free, interactive Angular course for beginners on Sololearn',
-      link: 'https://blog.angular.io/new-free-interactive-angular-course-for-beginners-on-sololearn-7a4c4f91810a'
-    }
-  ]
+  articles: any[] = mockData;
 
   main_article: any = {
+    id: 1,
     img: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*Nmb3_8DCuANFEcfXD7iyEQ.png',
     date: 'September 14th, 2023',
     title: 'Incremental Static Regeneration for Angular',
