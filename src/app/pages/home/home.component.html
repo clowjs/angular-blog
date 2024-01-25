@@ -5,8 +5,20 @@
     <app-big-card></app-big-card>
   </div>
   <div class="articles__others">
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
+    <div *ngFor="let article of articles; last as isLast">
+      <app-small-card
+        [img]="article.img"
+        [date]="article.date"
+        [title]="article.title"
+      ></app-small-card>
+      <hr *ngIf="!isLast" />
+    </div>
+    <!-- <app-small-card img="article.img" hr="yes"></app-small-card>
+    <app-small-card hr="yes"></app-small-card>
+    <app-small-card hr="no"></app-small-card> -->
   </div>
 </div>
+<!--
+<li *ngFor="let page of pages">
+  <a [attr.aria-current]="page === current ? 'page' : null">{{ page }}</a>
+</li> -->

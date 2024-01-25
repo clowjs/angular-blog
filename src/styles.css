@@ -9,3 +9,12 @@
   color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
 }
+
+hr {
+  display: block;
+  height: px;
+  border: 0;
+  border-top: 2px solid #2c2c2c;
+  margin: 1em 0;
+  padding: 0;
+}
