@@ -1,18 +1,15 @@
-<div class="container__big-card">
-  <div class="big-card__picture">
-    <img
-      src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/blogs/2023/2023-11/angular-logo-1200-628.png?sfvrsn=bf64b1ee_3"
-      alt=""
-    />
+<a [href]="link">
+  <div class="container__big-card">
+    <div class="big-card__picture">
+      <img [src]="img" alt="" />
+    </div>
+    <div class="big-card__title">
+      <h1>{{ title }}</h1>
+    </div>
+    <div class="big-card__description">
+      <p>
+        {{ description }}
+      </p>
+    </div>
   </div>
-  <div class="big-card__title">
-    <h1>Saiu a nova versão do Angular</h1>
-  </div>
-  <div class="big-card__description">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus
-      neque id suscipit rutrum. Sed dignissim varius malesuada. Nunc nisi justo,
-      varius sit amet pulvinar ac, vulputate eget ipsum. Fusce.
-    </p>
-  </div>
-</div>
+</a>

@@ -1,6 +1,3 @@
-a {
-  text-decoration: none;
-}
 .container__navbar {
   display: flex;
   flex-direction: row;
@@ -22,7 +19,7 @@ a {
   margin-right: 30px;
 }
 
-.navbar__picture > img {
+.navbar__picture > a > img {
   width: 60px;
 }
 
